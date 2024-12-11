@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tweet-sentiment-subjectivity/static/css/main.5bea8193.css",
+    "main.js": "/tweet-sentiment-subjectivity/static/js/main.9c86902f.js",
+    "index.html": "/tweet-sentiment-subjectivity/index.html",
+    "main.5bea8193.css.map": "/tweet-sentiment-subjectivity/static/css/main.5bea8193.css.map",
+    "main.9c86902f.js.map": "/tweet-sentiment-subjectivity/static/js/main.9c86902f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bea8193.css",
+    "static/js/main.9c86902f.js"
+  ]
+}
