@@ -39,8 +39,8 @@ class Child1 extends Component {
     console.log('Months: ', months);
 
     const width = 1000;
-    const height = 550;
-    const margin = {top: 50, right: 20, bottom: 10, left: 10};
+    const height = 540;
+    const margin = {top: 50, right: 20, bottom: 5, left: 10};
 
     const svg = d3.select('#mysvg')
       .attr('width', width)
@@ -104,10 +104,10 @@ class Child1 extends Component {
           
           d3.forceSimulation(modelData)
             .force('y', d3.forceY(d => yScale(d.Month)).strength(0.3))
-            .force('x', d3.forceX(width / 2).strength(0.01))
+            .force('x', d3.forceX(width / 2).strength(0.02))
             .force('collision', d3.forceCollide(9))
             .on('tick', () => {
-              appendCircles.attr('cx', d => d.x + 200)
+              appendCircles.attr('cx', d => d.x)
                 .attr('cy', d => d.y);
             });
         },
@@ -174,13 +174,13 @@ class Child1 extends Component {
           </svg>
         </div>
         <div id='selected-tweets'>
-        {this.state.selectedData.length > 0 && (
-          <div>
-            {this.state.selectedData.map((d) => (
-              <p>{d.RawTweet}</p>
-            ))}
-          </div>
-        )}
+          {this.state.selectedData.length > 0 && (
+            <div>
+              {this.state.selectedData.map((d) => (
+                <p>{d.RawTweet}</p>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     );
