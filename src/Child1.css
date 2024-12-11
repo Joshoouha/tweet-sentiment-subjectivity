@@ -1,0 +1,10 @@
+#dropdown {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#model {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
